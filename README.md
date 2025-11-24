@@ -1,1 +1,1 @@
-# Das ist ein gesammelter Ordner für gemeinsame Informatik-Projekte
+# Eine fiktive Website für ein Flyer-Projekt
