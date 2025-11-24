@@ -1,11 +1,200 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="de">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Website für Flyer</title>
+    <title>Wasserski Center Mustermann</title>
+
+    <style>
+        /* --- Global Styles --- */
+        body {
+            margin: 0;
+            font-family: "Segoe UI", Arial, sans-serif;
+            background: #f2faff;
+            color: #003d63;
+        }
+
+        header {
+            background: linear-gradient(135deg, #00aaff, #005f99);
+            padding: 50px 20px;
+            text-align: center;
+            color: white;
+            border-bottom-left-radius: 40px;
+            border-bottom-right-radius: 40px;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 3rem;
+            font-weight: 700;
+        }
+
+        nav {
+            text-align: center;
+            padding: 15px;
+            background: #ffffffcc;
+            backdrop-filter: blur(8px);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        nav a {
+            margin: 0 20px;
+            text-decoration: none;
+            font-weight: 600;
+            color: #005f99;
+            font-size: 1.1rem;
+        }
+
+        nav a:hover {
+            color: #00aaff;
+        }
+
+        section {
+            padding: 40px 20px;
+            max-width: 1100px;
+            margin: auto;
+        }
+
+        h2 {
+            text-align: center;
+            font-size: 2rem;
+            margin-bottom: 25px;
+        }
+
+        /* --- Price Cards --- */
+        .price-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 25px;
+        }
+
+        .card {
+            background: white;
+            padding: 25px;
+            border-radius: 25px;
+            width: 260px;
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.12);
+            text-align: center;
+            transition: 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.18);
+        }
+
+        .card h3 {
+            color: #0077b6;
+            margin-bottom: 10px;
+        }
+
+        .price {
+            font-size: 1.7rem;
+            color: #00aaff;
+            margin: 15px 0;
+            font-weight: bold;
+        }
+
+        /* --- Impressum --- */
+        .impressum-box {
+            background: #e0f4ff;
+            padding: 25px;
+            border-radius: 20px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #005f99;
+            color: white;
+            border-top-left-radius: 40px;
+            border-top-right-radius: 40px;
+            margin-top: 40px;
+        }
+    </style>
 </head>
+
 <body>
-    
+
+<header>
+    <h1>Wasserski Center Mustermann</h1>
+    <p>Action, Wasser & Spaß – für Anfänger bis Profis</p>
+</header>
+
+<nav>
+    <a href="#über-uns">Über Uns</a>
+    <a href="#preise">Preise</a>
+    <a href="#impressum">Impressum</a>
+</nav>
+
+<section id="über-uns">
+    <h2>Über Uns</h2>
+    <p style="text-align:center; max-width:800px; margin:auto;">
+        Seit über 15 Jahren steht das Wasserski Center Mustermann für Wassersport, Abenteuer 
+        und Freizeitspaß für die ganze Familie. Egal ob Wasserski, Wakeboard oder Kneeboard – 
+        unser modern ausgestatteter Lift, erfahrenes Personal und unser sonniger Seebereich 
+        bieten perfekte Bedingungen für einen unvergesslichen Tag.
+    </p>
+</section>
+
+<section id="preise">
+    <h2>Unsere Preise</h2>
+
+    <div class="price-container">
+
+        <div class="card">
+            <h3>Einsteigerkurs</h3>
+            <p>60 Minuten Kurs + Einweisung</p>
+            <div class="price">35 €</div>
+        </div>
+
+        <div class="card">
+            <h3>Tageskarte</h3>
+            <p>Wasserski & Wakeboard</p>
+            <div class="price">45 €</div>
+        </div>
+
+        <div class="card">
+            <h3>10-Fahrten-Karte</h3>
+            <p>Für regelmäßige Fahrer</p>
+            <div class="price">120 €</div>
+        </div>
+
+        <div class="card">
+            <h3>Ausrüstung</h3>
+            <p>Ski oder Board</p>
+            <div class="price">10 € / Tag</div>
+        </div>
+
+    </div>
+</section>
+
+<section id="impressum">
+    <h2>Impressum</h2>
+
+    <div class="impressum-box">
+        <p><strong>Wasserski Center Mustermann</strong><br>
+           Musterweg 12<br>
+           12345 Musterstadt</p>
+
+        <p><strong>Vertreten durch:</strong><br>
+           Max Mustermann</p>
+
+        <p><strong>Kontakt:</strong><br>
+           Telefon: 01234 / 56789<br>
+           E-Mail: info@wasserski-mustermann.de</p>
+
+        <p>Verantwortlich gemäß § 55 Abs. 2 RStV: Max Mustermann</p>
+    </div>
+</section>
+
+<footer>
+    © 2025 Wasserski Center Mustermann – Alle Rechte vorbehalten
+</footer>
+
 </body>
 </html>
