@@ -1,1 +1,1 @@
-# Informatik
+# Das ist ein gesammelter Ordner für gemeinsame Informatik-Projekte
